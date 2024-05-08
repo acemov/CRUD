@@ -3,8 +3,9 @@ const path = require("path")
 
 const app = express()
 
-vistas = {
-    main:(req,res)=>{
-        res.render("index.ejs")
+const vista = {
+    main: (req, res) => {
+        return res.render("../views/main.ejs")
     }
 }
+module.exports = vista
