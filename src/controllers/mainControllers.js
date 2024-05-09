@@ -1,11 +1,10 @@
 const express = require("express")
-const path = require("path")
 
-const app = express()
+let lista = ["Pedro","Juan","Lorenzo","Miguel","Lucas","Roman"]
 
 const vista = {
     main: (req, res) => {
-        return res.render("../views/products/main.ejs")
+        return res.render("../views/products/main.ejs",{"listaDeNombres":lista})
     }
 }
 module.exports = vista

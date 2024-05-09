@@ -3,6 +3,11 @@
     background-color: rgb(66, 66, 66);
     box-sizing: border-box;
 }
+/* - - - - - - - - - - - - - - CUADRADOS - - - - - - - - - - - - - -    */
+h2 ,.listaDeNombres{
+    text-align: center;
+    color: bisque;
+}
 
 .caja{
     display: flex;
@@ -18,4 +23,11 @@
 }
 .impar{
     background-color: blanchedalmond;
+}
+/* - - - - - - - - - - - - - - LISTA DE PERSONAS - - - - - - - - - - - - - -    */
+.listaDeNombres{
+    padding: 0;
+}
+.nombres{
+    color: aliceblue;
 }

@@ -10,7 +10,8 @@
 </head>
 
 <body>
-    <h1>Somo la vista main 👍</h1>
+    <!-- -----------------Muestra los cuadrados----------------- -->
+    <h2>Cuadrados 👇</h2>
     <div class="caja">
     <% for(let i=0; i< 10; i++){ %>
         <% if(i%2==0) {%>
@@ -19,7 +20,14 @@
             <div class="impar">Soy el numero: <%=i+1%></div>
         <% } %>
     <% } %>
-</div>
+    </div>
+    <!-- -----------------Muestra la lista de persona----------------- -->
+    <h2>Lisa de personas 👇</h2>
+    <ul class="listaDeNombres" type="none">
+        <% for(let i=0; i< listaDeNombres.length; i++){ %>
+            <li class="nombres">👉<%=listaDeNombres[i]%>👈numero de lista: <%=i%></li>
+        <% } %>
+    </ul>
 </body>
 
 </html>
