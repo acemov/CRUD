@@ -10,7 +10,16 @@
 </head>
 
 <body>
-    <h2>Somo una vista 👍</h2>
+    <h1>Somo la vista main 👍</h1>
+    <div class="caja">
+    <% for(let i=0; i< 10; i++){ %>
+        <% if(i%2==0) {%>
+            <div class="par">Soy el numero: <%=i+1%></div>
+        <% } else {%>
+            <div class="impar">Soy el numero: <%=i+1%></div>
+        <% } %>
+    <% } %>
+</div>
 </body>
 
 </html>
