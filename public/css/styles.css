@@ -3,6 +3,17 @@
     background-color: rgb(66, 66, 66);
     box-sizing: border-box;
 }
+/* - - - - - - - - - - - - - - SQUARE - - - - - - - - - - - - - -    */
+.square{
+    background-color: aquamarine;
+    text-align: center;
+    font-weight: bolder;
+    width: 150px;
+    padding: 10px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
 /* - - - - - - - - - - - - - - CUADRADOS - - - - - - - - - - - - - -    */
 h2 ,.listaDeNombres{
     text-align: center;
