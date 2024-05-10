@@ -15,7 +15,7 @@
     right: 10px;
 }
 /* - - - - - - - - - - - - - - CUADRADOS - - - - - - - - - - - - - -    */
-h2 ,.listaDeNombres{
+h2 ,.listaDeNombres , li{
     text-align: center;
     color: bisque;
 }
@@ -41,4 +41,18 @@ h2 ,.listaDeNombres{
 }
 .nombres{
     color: aliceblue;
+}
+
+/*  //////////////////////////////////////
+    //////////ARCHIVO lista.ejs///////////
+    //////////////////////////////////////*/
+.buscador{
+    margin: auto;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+.buscador input{
+    background-color: blanchedalmond;
+    margin: 10px 0px;
 }

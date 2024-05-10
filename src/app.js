@@ -12,7 +12,7 @@ const busquedaRouter = require("./routes/buscar.js")
 
 // - - - - - - - - - ABRIENDO RUTAS - - - - - - - - -
 app.use("/main", mainRouter)
-app.use("/buscandoEnUnaLista", busquedaRouter)
+app.use("/buscar", busquedaRouter)
 
 // - - - - - - - - - ABRIENDO SERVIDOR - - - - - - - - -
 app.listen(3000, () => { "Servidor abierto" })

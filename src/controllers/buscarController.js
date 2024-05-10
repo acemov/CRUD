@@ -1,12 +1,14 @@
 const express = require("express")
 
 const metodos = {
-    lista: (req,res)=>{
-        res.render("../views/products/lista.ejs")
-    },
-    mostrar: (req,res)=>{
-        let CaptarLoQuePusoElUser = req.query.pront
-        res.render("../views/products/lista.ejs", {"Se_Busca":CaptarLoQuePusoElUser})
+    buscador: (req, res) => {
+        let primero = req.query.primero
+        let segundo = req.query.segundo
+        res.render("../views/products/lista.ejs",
+            {
+                "Primera_Busqueda": primero,
+                "Segunda_Busqueda": segundo,
+            })
     }
 }
 module.exports = metodos
