@@ -14,11 +14,13 @@ app.use(express.json())
 const mainRouter = require("./routes/main.js")
 const busquedaRouter = require("./routes/buscar.js")
 const postRouter = require("./routes/post.js")
+const rutasParametrizadasRouter = require("./routes/rutasParametrizadas.js")
 
 // - - - - - - - - - ABRIENDO RUTAS - - - - - - - - -
 app.use("/main", mainRouter)
 app.use("/buscar", busquedaRouter)
 app.use("/enviar", postRouter)
+app.use("/rutasParametrizadas", rutasParametrizadasRouter)
 
 // - - - - - - - - - ABRIENDO SERVIDOR - - - - - - - - -
 app.listen(3000, () => {
