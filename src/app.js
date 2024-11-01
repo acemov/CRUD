@@ -7,7 +7,7 @@ app.set("view engine", "ejs")
 app.use(express.static(path.join(__dirname, "../public"))) //para poder usar los archivos public
 
 // - - - - - - - - - LO QUE SE ENVIA POR POST ES CAPTURADO DE FORMATO LITERAL - - - - - - - - -
-app.use(express.urlencoded({extended:false}))
+app.use(express.urlencoded({ extended: false }))
 app.use(express.json())
 
 // - - - - - - - - - RUTAS - - - - - - - - -
@@ -21,4 +21,6 @@ app.use("/buscar", busquedaRouter)
 app.use("/enviar", postRouter)
 
 // - - - - - - - - - ABRIENDO SERVIDOR - - - - - - - - -
-app.listen(3000, () => { "Servidor abierto" })
+app.listen(3000, () => {
+    console.log("Servidor abierto");
+})
