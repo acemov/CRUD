@@ -16,7 +16,7 @@
     <!-- -----------------Muestra los cuadrados----------------- -->
     <h2>Cuadrados 👇</h2>
     <div class="caja">
-    <% for(let i=0; i< 10; i++){ %>
+    <% for(let i=0; i< 10; i++){ %> <!-- Este "i" se declara en esta linea de codigo -->
         <% if(i%2==0) {%>
             <div class="par">Soy el numero: <%=i+1%></div>
         <% } else {%>
@@ -29,18 +29,26 @@
     <ul class="listaDeNombres" type="none">
         <% for(let i=0; i< listaDeNombres.length; i++){ %>
             <li class="nombres">👉<%=listaDeNombres[i]%>👈numero de lista: <%=i%></li>
-        <% } %>
-    </ul>
+            <% } %>
+        </ul>
+    <!-- ----------------- Formulario metodo post ----------------- -->
+    <h2>Envia un formulario por el metodo POST con este link 👇 </h2>
+    <div class="volver-a">
+        <a class="volver" href="http://localhost:3000/enviar">SOY EL LINK</a>
+    </div>
     <!-- ----------------- Lo que se se busco ----------------- -->
-    <h2>Esto es lo que buscaste 👇 (tambien aparece en la URL)</h2>
+    <h2>Envia un formulario por el metodo GET con este link 👇 (el que aparece en la URL)</h2>
     <ul type="none" class="listaDeNombres">
         <li>
-            ⭐<%- Primera_Busqueda %>
+            ⭐<%= Primera_Busqueda %>
         </li>
         <li>
-            ⭐<%- Segunda_Busqueda %>
+            ⭐<%= Segunda_Busqueda %>
         </li>
     </ul>
+    <div class="volver-a">
+        <a class="volver" href="http://localhost:3000/buscar/ingresa">SOY EL LINK:)</a>
+    </div>
 </body>
 
 </html>

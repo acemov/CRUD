@@ -70,7 +70,15 @@ li {
 
 /* - - - - - - - - - - - - - - parametrizados :p - - - - - - - - - - - - - -    */
 .tituloParametrizado,
-.numeroParametrizado {
+.numeroParametrizado, .volver-a{
     display: flex;
     justify-content: center;
+}
+.volver {
+    padding: 4px;
+    font-weight: bolder;
+    color: blanchedalmond;
+    text-decoration: none;
+    border: 3px solid blanchedalmond;
+    border-radius: 3px;
 }

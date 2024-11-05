@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormularioPost</title>
+</head>
+
+<body>
+    <h1>LISTA DE NOMBRES Y ID PARA PROBAR PUT 👍</h1>
+    <ul class="listaDeNombres" type="none">
+        <% for(let i=0; i< ListaNombresYid.length; i++){ %>
+            <li class="nombres">
+                Nombre: <%=ListaNombresYid[i].name%> | Numero de lista: <%=ListaNombresYid[i].id -1%>
+                        <form method="post" action="/put-y-delete/delete/<%=ListaNombresYid[i].id -1%> / <%=ListaNombresYid[i].name%>?_method=DELETE">
+                            <button type="submit">
+                                Delete
+                            </button>
+                        </form>
+            </li>
+            <% } %>
+    </ul>
+    <h1>Somos el formulario para PUT 👍</h1>
+    <form action="/put-y-delete/editPorPut?_method=PUT" method="post">
+        <!--  el action="/enviar" viaja por el archivo post.js de la carpeta router, por el metodo post -->
+        <input type="text" name="primer-texto" value="<%= userAeditar.id-1 %>">
+        <input type="text" name="segundo-texto" value="<%= userAeditar.name %>">
+        <input type="submit" value="Editar">
+    </form>
+
+</body>
+
+</html>

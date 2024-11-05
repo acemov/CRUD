@@ -9,7 +9,7 @@ const post = {
     enviar:(req,res)=>{
         let post = req.body
         lista.push(JSON.stringify(post))
-        res.redirect("/enviar/lista")
+        res.redirect("/enviar/lista") //muestra lo que se envio
     },
     lista:(req,res)=>{
         res.render("../views/products/lista.ejs",
