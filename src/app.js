@@ -26,7 +26,9 @@ app.use("/buscar", busquedaRouter)
 app.use("/enviar", postRouter)
 app.use("/rutasParametrizadas", rutasParametrizadasRouter)
 app.use("/put-y-delete",putYdeleteRouter)
-
+app.use((req,res,next)=>{
+    res.status(404).render("PaginaDeError")
+})
 // - - - - - - - - - ABRIENDO SERVIDOR - - - - - - - - -
 app.listen(3000, () => {
     console.log("Servidor abierto");
