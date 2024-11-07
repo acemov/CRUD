@@ -19,15 +19,17 @@ const busquedaRouter = require("./routes/buscar.js")
 const postRouter = require("./routes/post.js")
 const rutasParametrizadasRouter = require("./routes/rutasParametrizadas.js")
 const putYdeleteRouter = require("./routes/putYdelete.js")
-
+const multerRouter = require("./routes/Multer.js")
 // - - - - - - - - - ABRIENDO RUTAS - - - - - - - - -
 app.use("/main", mainRouter)
 app.use("/buscar", busquedaRouter)
 app.use("/enviar", postRouter)
 app.use("/rutasParametrizadas", rutasParametrizadasRouter)
 app.use("/put-y-delete",putYdeleteRouter)
+app.use("/multer",multerRouter)
+
 app.use((req,res,next)=>{
-    res.status(404).render("PaginaDeError")
+    res.status(404).render("PaginaDeError") //pagina de error
 })
 // - - - - - - - - - ABRIENDO SERVIDOR - - - - - - - - -
 app.listen(3000, () => {

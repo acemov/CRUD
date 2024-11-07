@@ -1,5 +1,3 @@
-const express = require("express")
-const router = express.Router()
 
 const mostar = {
     numero: (req, res) => {
