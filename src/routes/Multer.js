@@ -1,19 +1,27 @@
-const multer = require("multer")
 const path = require("path")
 const express = require("express")
 const router = express.Router()
-const multerControllers = require("../controllers/multerControllers")
-const uploadFile = multer({stroage})
+const multerController = require("../controllers/multerController")
+const multer = require("multer")
 
-const stroage = multer.diskStorage({
-    destination: (req, file, cb) => {
-        cb(null, path.join(__dirname, "../../public/images"))
+// - - - - - - - - - - - - - - - -  Configuración de multer  - - - - - - - - - - - - - - - - 
+const storage = multer.diskStorage({
+    destination: function (req, file, cb) {
+        cb(null, path.join(__dirname, "../../public/img"))
     },
-    filename: (req, file, cb) => {
-        cb(null, file.fieldname + "${date.now()}_img_${path.extname(file.originalname)}"))
+    filename: function (req, file, cb) {
+        console.log(file) // de aca sale "file.originalname" de la linea ---> let extensionDelArchivo = path.extname(file.originalname)
+        let MiliSegundos = Date.now()
+        let extensionDelArchivo = path.extname(file.originalname)
+        cb(null, "imagen-" + MiliSegundos + extensionDelArchivo)
+        //cb(null, `${Date.now()}_img_${path.extname(file.originalname)}`)
     }
 })
+const upload = multer({storage: storage})
 
-router.get("/subiendo",multerControllers.subirArchivo)
+// - - - - - - - - - - - - - - - -  Configuración de Rutas  - - - - - - - - - - - - - - - - 
+router.get("/formulario", multerController.vista)
+router.post("/subiendoArchivo",upload.single("ElNombreTieneQueSerIgual"), multerController.MostarArhivo)
+
 
 module.exports = router

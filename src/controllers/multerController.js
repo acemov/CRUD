@@ -1,6 +1,9 @@
 const ProbandoMulter ={
-    subirArchivo: (req, res) => {
-        res.send("Archivo subido")
+    vista: (req, res) => {
+        res.render("../views/products/multerFormulario")
+    },
+    MostarArhivo:(req, res) => {
+        res.render("../views/products/multerVista")
     }
 }
 module.exports = ProbandoMulter
