@@ -1,6 +1,6 @@
 let variable = "hola"
-let nombre = "Franco"
-let fraseCompleta = `hola ${nombre}`
+let nombreA = "Franco"
+let fraseCompleta = `hola ${nombreA}`
 
 // ------------------->
 
@@ -25,7 +25,29 @@ function saludar (nombre){
 
 // ------------------->
 
-console.log(__dirname);
+//console.log(undefined === false);
 
+// ------------------->
 
+let personas = {
+    nombre: "Franco",
+    apellido: "Perez",
+    edad: 25,
+    nombre: "Juan",
+    apellido: "pepe",
+    edad: 30
+}
+let {nombre, apellido, edad: nuevaPersona } = personas
+//console.log(personas)
+// ------------------->
 
+let array = [1,2,3,4,5,6,7,8,9,10]
+let array2 = [11,12,13,14,15,16,17,18,19,20]
+let array3 = [...array, ...array2]
+console.log(array3);
+// ------------------->
+
+let parte = ["estas", "todo", "bien?"]
+let parte2 = [ "hola", "como", ...parte ,", me llamo" , "franco"]
+
+console.log(parte2);

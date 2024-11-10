@@ -3,11 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <title>Multer</title>
 </head>
 <body>
-    <form action="/multer/subiendoArchivo" method="post" enctype="multipart/form-data">  <!--  agregar si o si enctype="multipart/form-data" para que funcione multer  -->
-        <label for="imagenPrueba">Sube la imagen 👍</label>
+    <h2>Sube la imagen 👍</h2>
+    <form class="buscador" action="/multer/subiendoArchivo" method="post" enctype="multipart/form-data">  <!--  agregar si o si enctype="multipart/form-data" para que funcione multer  -->
+        <br>
+        <input type="text" name="nombre" value="Nombre">
+        <br>
+        <input type="text" name="precio" value="precio">
         <br>
         <input type="file" name="ElNombreTieneQueSerIgual" id="imagenPrueba">
         <br>

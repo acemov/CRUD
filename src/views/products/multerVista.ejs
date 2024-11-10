@@ -1,11 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <title>Multer</title>
 </head>
+
 <body>
-    La imagen fue sibida con exito 😎
+    <H2>Estas son las imagenes 👇😎</H2>
+    <ul class="columna">
+        <% for (let i = 0; i < datos.length; i++) {%>
+            <div class="cajaInfo">
+            <li type="none" class="info"><%- datos[i].nombre %></li>
+            <li type="none" class="info"><%- datos[i].precio %></li>
+            <li type="none" class="info"><img class="imagenSubida" src= "/img/photo/<%-datos[i].NombreImagen%>" alt="imagen"></li>
+            </div>
+        <% } %> 
+    </ul>
 </body>
+
 </html>

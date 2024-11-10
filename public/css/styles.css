@@ -82,3 +82,24 @@ li {
     border: 3px solid blanchedalmond;
     border-radius: 3px;
 }
+
+/* - - - - - - - - - - - - - - MULTER VISTA - - - - - - - - - - - - - -    */
+.imagenSubida{
+    width: 20vh;
+}
+.info{
+    border: 3px solid blanchedalmond;
+}
+.columna {
+    width: 100%; /* Asegúrate de que el contenedor ocupe todo el ancho disponible */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Centra los elementos horizontalmente */
+}
+
+/* Elemento hijo */
+.cajaInfo {
+    margin: 10px;
+    width: 20%; /* Ajusta el ancho según sea necesario */
+}
