@@ -1,0 +1,6 @@
+Se ingresó a la ruta: http://localhost:3000/
+Se ingresó a la ruta: http://localhost:3000/
+Se ingresó a la ruta: http://localhost:3000/
+Se ingresó a la ruta: http://localhost:3000/
+Se ingresó a la ruta: http://localhost:3000/
+Se ingresó a la ruta: http://localhost:3000/
