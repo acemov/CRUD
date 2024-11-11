@@ -1,0 +1,7 @@
+Se ingresó a la ruta: http://localhost:3000/enviar
+Se ingresó a la ruta: http://localhost:3000/buscar/ingresa
+Se ingresó a la ruta: http://localhost:3000/buscar/ingresa
+Se ingresó a la ruta: http://localhost:3000/enviar
+Se ingresó a la ruta: http://localhost:3000/multer/formulario
+Se ingresó a la ruta: http://localhost:3000/main
+Se ingresó a la ruta: http://localhost:3000/enviar
