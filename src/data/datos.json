@@ -1,3 +1,27 @@
 [
-    
+    {
+        "nombre": "Nombre",
+        "precio": "precio",
+        "NombreImagen": "imagen-1731331957274.jpg"
+    },
+    {
+        "nombre": "Nombre",
+        "precio": "precio",
+        "NombreImagen": "default.webp"
+    },
+    {
+        "nombre": "Nombre2",
+        "precio": "precio3",
+        "NombreImagen": "default.webp"
+    },
+    {
+        "nombre": "Nombre21",
+        "precio": "precio32",
+        "NombreImagen": "imagen-1731334711412.png"
+    },
+    {
+        "nombre": "Nombre21",
+        "precio": "precio32",
+        "NombreImagen": "imagen-1731334862264.png"
+    }
 ]
